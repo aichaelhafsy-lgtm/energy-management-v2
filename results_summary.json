@@ -1,0 +1,89 @@
+{
+  "emission_factor_kg_per_kwh": 0.4574,
+  "co2": {
+    "kwh_total": 959636.71,
+    "co2_recorded_t": 403.81,
+    "co2_estimated_t": 438.93,
+    "ef_kg_per_kwh": 0.46,
+    "zero_co2_intervals_pct": 59.9,
+    "top10pct_intervals_share_kwh": 36.83
+  },
+  "baseline_cost": 98930.0,
+  "standby": {
+    "kwh_saved": 14060.23,
+    "co2_saved_t": 6.43,
+    "cost_saved": 959.35,
+    "idle_kwh": 70301.15,
+    "idle_share_kwh_pct": 7.33,
+    "idle_share_time_pct": 56.87
+  },
+  "efficiency": {
+    "kwh_saved": 26680.07,
+    "co2_saved_t": 12.2,
+    "cost_saved": 2823.99,
+    "active_kwh": 889335.56
+  },
+  "power_factor": {
+    "kwh_saved": 1906.24,
+    "co2_saved_t": 0.87,
+    "cost_saved": 1036.15,
+    "penalty_saved": 868.56,
+    "loss_cost_saved": 167.59,
+    "pct_intervals_below": 54.81,
+    "pct_kwh_below": 41.43,
+    "pf_weighted_before": 88.22,
+    "pf_weighted_after": 94.71,
+    "bank_kvar_p90": 77.99,
+    "bank_kvar_p95": 100.19,
+    "bank_kvar_max": 221.15
+  },
+  "shift": {
+    "kwh_saved": 0.0,
+    "co2_saved_t": 0.0,
+    "cost_saved": 4132.6,
+    "kwh_moved": 80289.55,
+    "cost_before": 98929.61,
+    "cost_after": 94797.02,
+    "peak_kw_before": 563.89,
+    "peak_kw_after": 532.63,
+    "max_kwh_before": 157.18,
+    "max_kwh_after": 141.46,
+    "cap_kwh": 59.27
+  },
+  "drivers": {
+    "r2_temporal": 0.497,
+    "r2_with_electrical": 0.9979,
+    "importance": [
+      {
+        "feature": "Load_Type_encoded",
+        "importance": 1.1396,
+        "std": 0.0084
+      },
+      {
+        "feature": "NSM",
+        "importance": 0.5132,
+        "std": 0.0082
+      },
+      {
+        "feature": "month",
+        "importance": 0.0001,
+        "std": 0.0002
+      },
+      {
+        "feature": "dayofweek",
+        "importance": -0.0018,
+        "std": 0.0045
+      },
+      {
+        "feature": "is_weekend",
+        "importance": -0.0164,
+        "std": 0.0033
+      }
+    ]
+  },
+  "tariff_assumption": {
+    "Light_Load": 0.06,
+    "Medium_Load": 0.09,
+    "Maximum_Load": 0.13
+  }
+}

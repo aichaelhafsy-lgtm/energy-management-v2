@@ -1,0 +1,100 @@
+{
+  "H15": {
+    "random_forest": {
+      "MAE": 4.19,
+      "RMSE": 8.762,
+      "R2": 0.9221
+    },
+    "naif": {
+      "MAE": 5.447,
+      "RMSE": 12.331,
+      "R2": 0.8457
+    },
+    "naif_definition": "même valeur qu'il y a 15 min",
+    "n_train": 27955,
+    "n_test": 6989,
+    "test_start": "2018-10-20 05:00:00",
+    "test_end": "2019-01-01 00:00:00",
+    "features": [
+      "NSM",
+      "hour_sin",
+      "hour_cos",
+      "dayofweek",
+      "is_weekend",
+      "month_sin",
+      "month_cos",
+      "is_working_hours",
+      "lag_15m",
+      "lag_1h",
+      "lag_24h",
+      "roll_mean_1h",
+      "roll_std_1h"
+    ],
+    "importances": {
+      "lag_15m": 0.6709,
+      "roll_mean_1h": 0.2058,
+      "roll_std_1h": 0.045,
+      "lag_1h": 0.0176,
+      "hour_cos": 0.0165,
+      "NSM": 0.016,
+      "lag_24h": 0.0118,
+      "is_working_hours": 0.0073,
+      "month_cos": 0.0035,
+      "hour_sin": 0.0019,
+      "dayofweek": 0.0018,
+      "month_sin": 0.0014,
+      "is_weekend": 0.0004
+    }
+  },
+  "H24": {
+    "random_forest": {
+      "MAE": 14.373,
+      "RMSE": 22.265,
+      "R2": 0.498
+    },
+    "naif": {
+      "MAE": 14.972,
+      "RMSE": 27.567,
+      "R2": 0.2305
+    },
+    "naif_definition": "même valeur qu'hier à la même heure",
+    "n_train": 27494,
+    "n_test": 6874,
+    "test_start": "2018-10-21 09:45:00",
+    "test_end": "2019-01-01 00:00:00",
+    "features": [
+      "NSM",
+      "hour_sin",
+      "hour_cos",
+      "dayofweek",
+      "is_weekend",
+      "month_sin",
+      "month_cos",
+      "is_working_hours",
+      "lag_24h",
+      "lag_48h",
+      "lag_168h"
+    ],
+    "importances": {
+      "lag_168h": 0.4487,
+      "lag_24h": 0.1573,
+      "is_working_hours": 0.1405,
+      "dayofweek": 0.0656,
+      "lag_48h": 0.0484,
+      "month_cos": 0.0386,
+      "NSM": 0.0327,
+      "month_sin": 0.0198,
+      "is_weekend": 0.0177,
+      "hour_cos": 0.0155,
+      "hour_sin": 0.0152
+    }
+  },
+  "modele_initial_P2": {
+    "random_forest": {
+      "MAE": 0.68,
+      "RMSE": 1.454,
+      "R2": 0.9979
+    },
+    "remarque": "Estimation avec mesures électriques du même intervalle (CO2, réactif, facteur de puissance) : pas une vraie prévision."
+  }
+}

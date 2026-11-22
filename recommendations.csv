@@ -1,0 +1,6 @@
+﻿Priorité,Action,Levier,Hypothèse,kWh évités,tCO2 évitées,Gain (€/an),% coût énergie,% kWh
+1,Décaler la charge des heures chères vers les heures creuses,"Planification : process flexibles (fours de maintien, pompage, broyage, lots) hors Maximum_Load","10% de la charge Medium/Max déplaçable dans la journée, plafond d'accueil 59 kWh/15min ; pic mensuel moyen 564 -> 533 kW",0.0,0.0,4132.6,4.18,0.0
+2,Améliorer l'efficacité des process en production,"Variateurs de vitesse, régulation des fours/moteurs, récupération de chaleur, maintenance","-3% sur 889 MWh de relevés en production (hypothèse, à valider par audit)",26680.07,12.2,2823.99,2.85,2.78
+3,Corriger le facteur de puissance (batterie de condensateurs automatique),"Compensation d'énergie réactive, par gradins régulés (évite la sur-compensation la nuit)",PF 88.2% -> 94.7% ; 55% des relevés sous 90% ; batterie ~78 kVAr (P90),1906.24,0.87,1036.15,1.05,0.2
+4,"Réduire la consommation à vide (nuit, week-end, arrêts)","Pilotage des utilitaires : veille, extinction, compresseurs/ventilation à la demande","-20% des relevés <= 6 kWh/15min (7.3% de l'énergie, 57% du temps)",14060.23,6.43,959.35,0.97,1.47
+,"TOTAL (approximatif, mesures supposées indépendantes)",,,42646.54,19.51,8952.08,9.05,4.44
